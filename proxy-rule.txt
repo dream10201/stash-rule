@@ -3,3 +3,4 @@
 .googlevideo.com
 .v2ex.com
 .twitter.com
+.youtube.com
