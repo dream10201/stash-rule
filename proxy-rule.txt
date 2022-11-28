@@ -1,2 +1,2 @@
-google.com
 .google.com
+.v2ex.com
