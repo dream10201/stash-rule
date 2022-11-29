@@ -1,7 +1,9 @@
 .google.com
 .gstatic.com
 .googlevideo.com
+.gmail.com
 .v2ex.com
 .twitter.com
 .youtube.com
 .github.com
+.facebook.com
