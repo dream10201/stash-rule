@@ -8,3 +8,4 @@
 .github.com
 .githubusercontent.com
 .facebook.com
+.telegram.org
