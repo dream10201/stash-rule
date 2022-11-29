@@ -1,0 +1,11 @@
+name: purge.jsdelivr.net
+on:
+  push:
+    branches: [ "master" ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: push
+        run: curl -sS https://purge.jsdelivr.net/gh/dream10201/stash-rule@master/proxy-rule.txt
