@@ -11,6 +11,4 @@ jobs:
       - run: |
           chmod +x task.sh
           sudo ./task.sh
-      - name: Refresh cache
-        run: curl -sS https://purge.jsdelivr.net/gh/dream10201/stash-rule@master/proxy-rule.txt
       - uses: stefanzweifel/git-auto-commit-action@v4
