@@ -1,0 +1,11 @@
+.facebook.com
+.github.com
+.githubusercontent.com
+.gmail.com
+.google.com
+.googlevideo.com
+.gstatic.com
+.telegram.org
+.twitter.com
+.v2ex.com
+.youtube.com
