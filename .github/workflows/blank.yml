@@ -1,11 +1,17 @@
 name: purge.jsdelivr.net
 on:
-  push:
-    branches: [ "master" ]
+  schedule:
+    - cron: '30 3 * * *'
   workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: push
+      - uses: actions/checkout@v2
+      - run: |
+          chmod +x task.sh
+          sudo ./task.sh
+          git commit task.sh -m "update"
+          git push
+      - name: Refresh cache
         run: curl -sS https://purge.jsdelivr.net/gh/dream10201/stash-rule@master/proxy-rule.txt
