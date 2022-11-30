@@ -1,4 +1,7 @@
 #!/bin/bash
-curl -sS https://core.telegram.org/resources/cidr.txt >> proxy-rule.txt
-sort -u proxy-rule.txt | uniq > .out
-cat .out > proxy-rule.txt
+curl -sS https://core.telegram.org/resources/cidr.txt >> ipcidr-text.txt
+sort -u ipcidr-text.txt | uniq > .out
+cat .out > ipcidr-text.txt
+rm .out
+curl -sS https://purge.jsdelivr.net/gh/dream10201/stash-rule@master/ipcidr-text.txt
+curl -sS https://purge.jsdelivr.net/gh/dream10201/stash-rule@master/domain-text.txt
