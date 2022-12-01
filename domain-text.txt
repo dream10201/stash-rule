@@ -16,3 +16,4 @@
 .steamcontent.com
 .steamstatic.com
 .akamaihd.net 
+.pixiv.net
