@@ -9,3 +9,10 @@
 .twitter.com
 .v2ex.com
 .youtube.com
+.steampowered.com
+.steamcommunity.com
+.steamgames.com
+.steamusercontent.com
+.steamcontent.com
+.steamstatic.com
+.akamaihd.net 
