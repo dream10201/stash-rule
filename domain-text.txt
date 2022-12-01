@@ -17,3 +17,4 @@
 .steamstatic.com
 .akamaihd.net 
 .pixiv.net
+.pximg.net
