@@ -19,3 +19,4 @@
 .twitter.com
 .v2ex.com
 .youtube.com
+.openai.com
