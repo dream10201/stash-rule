@@ -8,6 +8,7 @@
 .gstatic.com
 .pixiv.net
 .pximg.net
+.reddit.com
 .steamcommunity.com
 .steamcontent.com
 .steamgames.com
@@ -18,4 +19,3 @@
 .twitter.com
 .v2ex.com
 .youtube.com
-.reddit.com
