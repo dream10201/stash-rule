@@ -6,6 +6,7 @@
 .google.com
 .googlevideo.com
 .gstatic.com
+.openai.com
 .pixiv.net
 .pximg.net
 .reddit.com
@@ -19,4 +20,3 @@
 .twitter.com
 .v2ex.com
 .youtube.com
-.openai.com
