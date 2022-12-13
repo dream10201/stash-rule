@@ -20,3 +20,4 @@
 .twitter.com
 .v2ex.com
 .youtube.com
+.discord.com
