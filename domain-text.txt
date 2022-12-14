@@ -21,3 +21,4 @@
 .v2ex.com
 .youtube.com
 .discord.com
+.discord.gg
