@@ -22,3 +22,4 @@
 .youtube.com
 .discord.com
 .discord.gg
+.twimg.com
