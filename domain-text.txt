@@ -24,4 +24,5 @@
 .discordapp.com
 .discordapp.net
 .discord.gg
+.discord.media
 .twimg.com
