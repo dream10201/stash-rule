@@ -1,4 +1,9 @@
 .akamaihd.net 
+.discord.com
+.discord.gg
+.discord.media
+.discordapp.com
+.discordapp.net
 .facebook.com
 .github.com
 .githubusercontent.com
@@ -17,12 +22,7 @@
 .steamstatic.com
 .steamusercontent.com
 .telegram.org
+.twimg.com
 .twitter.com
 .v2ex.com
 .youtube.com
-.discord.com
-.discordapp.com
-.discordapp.net
-.discord.gg
-.discord.media
-.twimg.com
