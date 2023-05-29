@@ -26,3 +26,4 @@
 .twitter.com
 .v2ex.com
 .youtube.com
+.sentry.io
