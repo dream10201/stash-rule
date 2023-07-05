@@ -46,7 +46,7 @@ http:
     - "duolingo-leaderboards-prod.duolingo.com"
     - "api.m.jd.com"
   script:
-    - match: ^https?:\/\/duolingo-leaderboards-prod\.cn\/.*
+    - match: ^https?:\/\/duolingo-leaderboards-prod\.cn.*
       name: duolingo
       type: response # request / response
       require-body: true
