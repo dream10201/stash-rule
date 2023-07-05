@@ -41,8 +41,11 @@ rules: #!replace
   - RULE-SET,domain-text,hysteria
   - RULE-SET,Loyalsoldier-proxy,hysteria
 http:
+  mitm:
+    - "duolingo-leaderboards-prod.duolingo.cn"
+    - "duolingo-leaderboards-prod.duolingo.com"
   script:
-    - match: duolingo-leaderboards-prod.duolingo.*
+    - match: ^https?:\/\/duolingo-leaderboards-prod\.cn\/(v1|v2|v3)\/availability\/.*
       name: duolingo
       type: response # request / response
       require-body: true
