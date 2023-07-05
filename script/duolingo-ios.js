@@ -7,4 +7,5 @@ if(!obj['adsConfig'])
 }
 obj["adsConfig"]["allowPersonalizedAds"] = false;
 body = JSON.stringify(obj);
+console.log(body);
 $done({body});
