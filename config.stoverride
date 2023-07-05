@@ -46,7 +46,7 @@ http:
     - "api.m.jd.com"
     - "ios-api-2.duolingo.cn"
   script:
-    - match: ^https?::\/\/ios-api-2\.duolingo\.cn\/2017-06-30\/login
+    - match: ^https?:\/\/ios-api-2\.duolingo\.cn\/2017-06-30\/login.*
       name: duolingo-ios
       type: response
       timeout: 20
