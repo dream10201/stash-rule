@@ -44,6 +44,7 @@ http:
   mitm:
     - "duolingo-leaderboards-prod.duolingo.cn"
     - "duolingo-leaderboards-prod.duolingo.com"
+    - "api.m.jd.com"
   script:
     - match: ^https?:\/\/duolingo-leaderboards-prod\.cn\/.*
       name: duolingo
@@ -53,8 +54,16 @@ http:
       argument: ''
       binary-mode: false
       max-size: 1048576 # 1MB
+    - match: ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item)
+      name: JDPrice
+      type: response
+      require-body: true
+      timeout: 10
  
 script-providers:
   duolingo:
     url: https://cdn.jsdelivr.net/gh/dream10201/stash-rule@master/script/duolingo.js
+    interval: 86400
+  JDPrice:
+    url: https://cdn.jsdelivr.net/gh/dream10201/stash-rule@master/script/JDPrice.js
     interval: 86400
