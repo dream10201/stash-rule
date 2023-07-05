@@ -2,7 +2,6 @@ var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
 
-console.log("=============123===============");
 obj['num_sessions_remaining_to_unlock'] = 0;
 obj['tier'] = 4;
 if(!obj['active'])
@@ -20,4 +19,5 @@ obj['active']['contest']['contest_state'] = 'ACTIVE'
 obj['active']['contest']['registration_end'] = '2099-11-03T00:00:00Z'
 obj['active']['contest']['registration_state'] = 'OPEN'
 body = JSON.stringify(obj);
+console.log(body);
 $done({body});
