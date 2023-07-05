@@ -45,7 +45,7 @@ http:
     - "duolingo-leaderboards-prod.duolingo.cn"
     - "duolingo-leaderboards-prod.duolingo.com"
   script:
-    - match: ^https?:\/\/duolingo-leaderboards-prod\.cn\/(v1|v2|v3)\/availability\/.*
+    - match: ^https?:\/\/duolingo-leaderboards-prod\.cn\/.*
       name: duolingo
       type: response # request / response
       require-body: true
