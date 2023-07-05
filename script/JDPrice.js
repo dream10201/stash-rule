@@ -5,7 +5,7 @@ const consolelog = false;
 const url = $request.url;
 const body = $response.body;
 const $tool = tool();
-
+console.log("=============123===============");
 if (url.indexOf(path1) != -1) {
     let obj = JSON.parse(body);
     delete obj.serverConfig.httpdns;
