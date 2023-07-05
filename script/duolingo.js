@@ -14,10 +14,8 @@ if(!obj['active']['contest']){
  obj['active']['contest'] = {}
 }
 obj['active']['contest']['contest_end'] = '2099-11-04T00:00:00Z'
-obj['active']['contest']['contest_start'] = '2019-10-28T00:00:00Z'
 obj['active']['contest']['contest_state'] = 'ACTIVE'
 obj['active']['contest']['registration_end'] = '2099-11-03T00:00:00Z'
 obj['active']['contest']['registration_state'] = 'OPEN'
 body = JSON.stringify(obj);
-console.log(body);
 $done({body});
