@@ -43,10 +43,9 @@ rules: #!replace
 http:
   mitm:
     - "duolingo-leaderboards-prod.duolingo.cn"
-    - "duolingo-leaderboards-prod.duolingo.com"
     - "api.m.jd.com"
   script:
-    - match: ^https?:\/\/duolingo-leaderboards-prod\.cn.*
+    - match: ^https:\/\/duolingo-leaderboards-prod\.duolingo\.cn.*
       name: duolingo
       type: response # request / response
       require-body: true

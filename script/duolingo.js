@@ -1,6 +1,8 @@
 var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
+
+console.log("=============123===============");
 obj['num_sessions_remaining_to_unlock'] = 0;
 obj['tier'] = 4;
 if(!obj['active'])
