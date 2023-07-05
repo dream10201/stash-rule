@@ -1,0 +1,58 @@
+dns:
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - system
+  nameserver:
+    - 119.29.29.29
+    - https://cn-south-rsa.iqiqzz.com/dns-query
+    - https://cn-east-rsa.iqiqzz.com/dns-query
+log-level: silent
+mode: rule
+rule-providers:
+  Loyalsoldier-GFWList:
+    behavior: domain-text
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/gfw.txt
+  Loyalsoldier-ad:
+    behavior: domain-text
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/reject.txt
+  Loyalsoldier-proxy:
+    behavior: domain-text
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/surge-rules@release/proxy.txt
+  domain-text:
+    behavior: domain-text
+    interval: 86400
+    url: https://fastly.jsdelivr.net/gh/dream10201/stash-rule@master/domain-text.txt
+  ipcidr-text:
+    behavior: ipcidr-text
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/dream10201/stash-rule@master/ipcidr-text.txt
+rules:
+  - RULE-SET,Loyalsoldier-ad,REJECT
+  - GEOIP,GOOGLE,hysteria
+  - GEOIP,TELEGRAM,hysteria
+  - GEOIP,TWITTER,hysteria
+  - GEOIP,FACEBOOK,hysteria
+  - GEOIP,NETFLIX,hysteria
+  - RULE-SET,Loyalsoldier-GFWList,hysteria
+  - RULE-SET,ipcidr-text,hysteria
+  - RULE-SET,domain-text,hysteria
+  - RULE-SET,Loyalsoldier-proxy,hysteria
+http:
+  script:
+    - match: duolingo-leaderboards-prod.duolingo.*
+      name: duolingo
+      type: response # request / response
+      require-body: true
+      timeout: 20
+      argument: ''
+      binary-mode: false
+      max-size: 1048576 # 1MB
+ 
+script-providers:
+  duolingo:
+    url: https://your-fancy-script.com/your-fancy-script.js
+    interval: 86400
