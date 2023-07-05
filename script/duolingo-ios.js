@@ -1,6 +1,6 @@
 var body = $response.body;
 var obj = JSON.parse(body);
-obj["plusStatus"] = "BOUND";
+obj["plusStatus"] = "PLUS";//bound
 if(!obj['adsConfig'])
 {
  obj['adsConfig'] = {};
