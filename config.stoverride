@@ -44,8 +44,16 @@ http:
   mitm:
     - "duolingo-leaderboards-prod.duolingo.cn"
     - "api.m.jd.com"
+    - "ios-api-2.duolingo.cn"
   script:
-    - match: ^https:\/\/duolingo-leaderboards-prod\.duolingo\.cn.*
+    - match: ^https?::\/\/ios-api-2\.duolingo\.cn\/2017-06-30\/login
+      name: duolingo-ios
+      type: response
+      timeout: 20
+      require-body: true
+
+  script:
+    - match: ^https?:\/\/duolingo-leaderboards-prod\.duolingo\.cn.*
       name: duolingo
       type: response # request / response
       require-body: true
@@ -66,4 +74,7 @@ script-providers:
     interval: 86400
   JDPrice:
     url: https://raw.githubusercontent.com/dream10201/stash-rule/master/script/JDPrice.js
+    interval: 86400
+  duolingo-ios:
+    url: https://raw.githubusercontent.com/dream10201/stash-rule/master/script/duolingo-ios.js
     interval: 86400
