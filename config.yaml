@@ -1,4 +1,6 @@
-dns:
+name: 默认
+desc: 远程配置
+dns: #!replace
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
@@ -9,7 +11,7 @@ dns:
     - https://cn-east-rsa.iqiqzz.com/dns-query
 log-level: silent
 mode: rule
-rule-providers:
+rule-providers: #!replace
   Loyalsoldier-GFWList:
     behavior: domain-text
     interval: 86400
@@ -30,7 +32,7 @@ rule-providers:
     behavior: ipcidr-text
     interval: 86400
     url: https://cdn.jsdelivr.net/gh/dream10201/stash-rule@master/ipcidr-text.txt
-rules:
+rules: #!replace
   - RULE-SET,Loyalsoldier-ad,REJECT
   - GEOIP,GOOGLE,hysteria
   - GEOIP,TELEGRAM,hysteria
@@ -41,7 +43,7 @@ rules:
   - RULE-SET,ipcidr-text,hysteria
   - RULE-SET,domain-text,hysteria
   - RULE-SET,Loyalsoldier-proxy,hysteria
-http:
+http: #!replace
   script:
     - match: duolingo-leaderboards-prod.duolingo.*
       name: duolingo
@@ -52,7 +54,7 @@ http:
       binary-mode: false
       max-size: 1048576 # 1MB
  
-script-providers:
+script-providers: #!replace
   duolingo:
     url: https://your-fancy-script.com/your-fancy-script.js
     interval: 86400
