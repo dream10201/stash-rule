@@ -7,7 +7,6 @@ dns: #!replace
     - system
   nameserver:
     - 119.29.29.29
-    - https://cn-south-rsa.iqiqzz.com/dns-query
     - https://cn-east-rsa.iqiqzz.com/dns-query
 log-level: silent
 mode: rule
@@ -56,5 +55,5 @@ http: #!replace
  
 script-providers: #!replace
   duolingo:
-    url: https://your-fancy-script.com/your-fancy-script.js
+    url: https://cdn.jsdelivr.net/gh/dream10201/stash-rule@master/script/duolingo.js
     interval: 86400
