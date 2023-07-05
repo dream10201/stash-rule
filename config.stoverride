@@ -54,6 +54,7 @@ http:
       argument: ''
       binary-mode: false
       max-size: 1048576 # 1MB
+      # https://raw.githubusercontent.com/jnlaoshu/MySelf/main/Stash/Script/JDPrice.stoverride
     - match: ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item)
       name: JDPrice
       type: response
