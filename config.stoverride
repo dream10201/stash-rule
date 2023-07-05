@@ -63,8 +63,8 @@ http:
  
 script-providers:
   duolingo:
-    url: https://cdn.jsdelivr.net/gh/dream10201/stash-rule@master/script/duolingo.js
+    url: https://raw.githubusercontent.com/dream10201/stash-rule/master/script/duolingo.js
     interval: 86400
   JDPrice:
-    url: https://cdn.jsdelivr.net/gh/dream10201/stash-rule@master/script/JDPrice.js
+    url: https://raw.githubusercontent.com/dream10201/stash-rule/master/script/JDPrice.js
     interval: 86400
